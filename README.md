@@ -1,6 +1,6 @@
 tech stack proposal
 typescript and react for front-end;
-django and mongodb for back-end;
+django and postgres for back-end;
 
 used Kaggle competition dataset for items 
 https://www.kaggle.com/cclark/product-item-data/home
