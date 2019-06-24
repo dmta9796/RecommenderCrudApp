@@ -4,9 +4,10 @@ from . import models
 from . import seedscript
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the index.")
+    data = sendtodb()
+    return HttpResponse(data)
 
 
 def sendtodb():
     data = seedscript.data()
-    print(data)
+    return data

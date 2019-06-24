@@ -1,13 +1,5 @@
 import csv
-
-# data = list()
-# with open('sample-data.csv', 'r') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#         data.append(row)
-
-# print(data)
-
+import os
 
 
 #def addusers():
@@ -15,7 +7,8 @@ import csv
 
 def data():
     data = list()
-    with open('sample-data.csv', 'r') as f:
+    cwd = os.getcwd()  # Get the current working directory (cwd)
+    with open(cwd + '/store/sample-data.csv', 'r') as f:
         reader = csv.reader(f)
         for row in reader:
             data.append(row)
