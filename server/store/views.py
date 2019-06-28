@@ -14,7 +14,7 @@ def sendtodb():
 
 def data(request):
     data = sendtodb()
-    #response = HttpResponse(data)
-    response = HttpResponse(data, content_type='text/plain')
+    print(data)
+    response = HttpResponse([data])
     #print(response)
     return response
