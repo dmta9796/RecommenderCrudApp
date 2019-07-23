@@ -6,13 +6,12 @@ from . import seedscript
 def index(request):
     return HttpResponse('at the index')
 
-def sendtodb():
+def readfromfile():
     data = seedscript.data()
+    print(data)
     return data
 
 def data(request):
-    data = sendtodb()
-    #print(data)
+    data = readfromfile()
     response = HttpResponse(data)
-    #print(response)
     return response
