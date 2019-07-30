@@ -8,7 +8,7 @@ def index(request):
 
 def readfromfile():
     data = seedscript.data()
-    print(data)
+    #print(data)
     return data
 
 def data(request):

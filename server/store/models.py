@@ -10,4 +10,6 @@ class User(models.Model):
 
 class Product(models.Model):
     productname = models.CharField(max_length = 50)
-    productdect = models.CharField(max_length = 100)
+    productfabric = models.CharField(max_length = 100)
+    productweight = models.IntegerField()
+    productorigin = models.CharField(max_length = 30)
