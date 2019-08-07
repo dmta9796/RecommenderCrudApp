@@ -9,7 +9,7 @@ class User(models.Model):
     country = models.CharField(max_length = 50)
 
 class Product(models.Model):
-    productname = models.CharField(max_length = 50)
-    productfabric = models.CharField(max_length = 100)
+    productname = models.CharField(max_length = 32)
+    productdetails = models.CharField(max_length = 1000)
     productweight = models.IntegerField()
     productorigin = models.CharField(max_length = 30)
