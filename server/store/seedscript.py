@@ -26,16 +26,16 @@ def processdata(data):
 def data():
         data = list()
         cwd = os.getcwd()  # Get the current working directory (cwd)
-        with open(cwd + '/store/sample-data.csv', 'r') as f:
+        with open(cwd + '/server/store/sample-data.csv', 'r') as f:
                 reader = csv.reader(f)
                 for row in reader:
                         row = processdata(row)
                         print(len(row),row)
-                        if(len(row)==4):
-                                db = models.Product(productname=row[0],productdetails=row[1],productweight=row[2],productorigin=row[3])
-                        else: 
-                                db = models.Product(productname=row[0],productdetails=row[1],productweight=0,productorigin=row[2])
-                        db.save()
+                        #if(len(row)==4):
+                                #db = models.Product(productname=row[0],productdetails=row[1],productweight=row[2],productorigin=row[3])
+                        #else: 
+                                #db = models.Product(productname=row[0],productdetails=row[1],productweight=0,productorigin=row[2])
+                        #db.save()
                         data.append(row)
         return data   
  
